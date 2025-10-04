@@ -113,6 +113,12 @@ body {
     min-height: calc(100vh - 80px);
 }
 
+@media (min-width: 769px) {
+    .sidebar {
+        display: flex !important;
+    }
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
