@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Pulse</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">📝 Markdown Pulse</h1>
+                <div class="header-actions">
+                    <button id="toggleTheme" class="btn-icon">🌙</button>
+                    <button id="newPost" class="btn">+ New Post</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="container main-content">
+            <aside class="sidebar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search posts...">
+                </div>
+                <div class="filter-section">
+                    <h3>Tags</h3>
+                    <div id="tagList" class="tag-list"></div>
+                </div>
+                <div id="postList" class="post-list"></div>
+            </aside>
+
+            <section class="content-area">
+                <div id="viewMode" class="view-mode">
+                    <div id="postView" class="post-view"></div>
+                </div>
+
+                <div id="editMode" class="edit-mode hidden">
+                    <div class="editor-header">
+                        <input type="text" id="postTitle" placeholder="Post title..." class="title-input">
+                        <input type="text" id="postTags" placeholder="Tags (comma-separated)" class="tags-input">
+                    </div>
+                    <div class="editor-container">
+                        <div class="editor-pane">
+                            <h4>Markdown</h4>
+                            <textarea id="markdownEditor" placeholder="Write your post in markdown..."></textarea>
+                        </div>
+                        <div class="preview-pane">
+                            <h4>Preview</h4>
+                            <div id="markdownPreview" class="markdown-preview"></div>
+                        </div>
+                    </div>
+                    <div class="editor-actions">
+                        <button id="savePost" class="btn btn-primary">Save Post</button>
+                        <button id="cancelEdit" class="btn btn-secondary">Cancel</button>
+                        <button id="deletePost" class="btn btn-danger hidden">Delete</button>
+                    </div>
+                </div>
+
+                <div id="welcomeScreen" class="welcome-screen">
+                    <h2>Welcome to Markdown Pulse</h2>
+                    <p>Start creating your first blog post by clicking "New Post"</p>
+                    <p>✍️ Write in markdown with live preview</p>
+                    <p>🏷️ Organize posts with tags</p>
+                    <p>🔍 Search through all your posts</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

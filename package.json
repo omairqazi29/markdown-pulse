@@ -1,0 +1,21 @@
+{
+  "name": "markdown-pulse",
+  "version": "1.0.0",
+  "description": "A minimal markdown-based blogging platform with live preview, tag filtering, and search",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["markdown", "blog", "minimalist"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^11.1.1",
+    "dompurify": "^3.0.6"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
+}
