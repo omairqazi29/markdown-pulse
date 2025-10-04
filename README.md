@@ -2,6 +2,8 @@
 
 A minimal markdown-based blogging platform with live preview, tag filtering, and search. Write posts in markdown, organize with tags, and publish instantly.
 
+🚀 **Live Demo:** https://omairqazi29.github.io/markdown-pulse/
+
 ## Features
 
 - ✍️ **Markdown Editor** - Write posts in markdown with live preview
